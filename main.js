@@ -1,5 +1,8 @@
 document.querySelector('#zipForm').addEventListener
 		('submit', getLocationInfo);
+//Listen for delete
+document.querySelector('body').addEventListener
+		('click', deleteLocation);
 
 		function getLocationInfo(e){
 			//Get zip value from input
