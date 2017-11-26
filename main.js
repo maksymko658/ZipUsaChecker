@@ -64,3 +64,11 @@ document.querySelector('body').addEventListener
 			// Show correct icon
 			document.querySelector(`.icon-${icon}`).style.display = 'inline-flex';
 		}
+
+		//Delete Location
+		function deleteLocation(e){
+			if(e.target.className == 'delete'){
+					document.querySelector('.message').remove();
+					document.querySelector('.zip').value = '';
+			}
+		}
