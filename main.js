@@ -33,7 +33,7 @@ document.querySelector('body').addEventListener
 				data.places.forEach(place => {
 					output += 
 					`
-				<article class="message is-primary">
+				<article class="message is-success">
 					<div class="message-header">
 						<p>Location Info</p>
 					<button class="delete"></button>
