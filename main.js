@@ -13,8 +13,8 @@ document.querySelector('#zipForm').addEventListener
 				if(response.status != 200){
 					document.querySelector('#output').innerHTML = 
 					`
-					<article class="message message-body is-danger">
-					Invalid Zipcode, try again.
+					<article class="message is-danger">
+					<div class="message-body">Invalid Zipcode, try again.</div>
 					</article>
 					`;
 					throw Err(response.statusText);
