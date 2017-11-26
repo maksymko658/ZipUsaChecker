@@ -5,7 +5,14 @@ document.querySelector('#zipForm').addEventListener
 			//Get zip value from input
 			const zip = document.querySelector('.zip').value;
 
-			console.log(zip);
+			// Make request
+			
+			
+			fetch(`http://api.zippopotam.us/us/${zip}`)
+			.then(response => response.json())
+			.then(data => {
+				console.log(data);
+			});
 
 			e.preventDefault();
 		};
