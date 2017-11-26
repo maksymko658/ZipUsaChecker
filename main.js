@@ -11,6 +11,7 @@ document.querySelector('#zipForm').addEventListener
 			fetch(`http://api.zippopotam.us/us/${zip}`)
 			.then(response => {
 				if(response.status != 200){
+					showIcon('remove');
 					document.querySelector('#output').innerHTML = 
 					`
 					<article class="message is-danger">
@@ -19,6 +20,7 @@ document.querySelector('#zipForm').addEventListener
 					`;
 					throw Err(response.statusText);
 				} else {
+					showIcon('check');
 					return response.json();
 				}
 			})
@@ -34,4 +36,5 @@ document.querySelector('#zipForm').addEventListener
 			document.querySelector('.icon-remove').style.display = 'none';
 			document.querySelector('.icon-check').style.display = 'none';
 			// Show correct icon
+			document.querySelector(`.icon-${icon}`).style.display = 'inline-flex';
 		}
