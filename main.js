@@ -28,3 +28,10 @@ document.querySelector('#zipForm').addEventListener
 			.catch(err => console.log(err));
 			e.preventDefault();
 		};
+
+		function showIcon(icon){
+			// Clear icons
+			document.querySelector('.icon-remove').style.display = 'none';
+			document.querySelector('.icon-check').style.display = 'none';
+			// Show correct icon
+		}
