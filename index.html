@@ -4,27 +4,32 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css" />
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Location Finder</title>
+
 </head>
 <body>
-	<section class="hero hero-body is-dark container">
+	<section class="hero hero-body is-success container">
 		<h1 class="title">US Location</h1>
 		<h2 class="subtitle">Enter zipcode to get location</h2>
 		<!-- It will be our form -->
 		<form id="zipForm">
 			<div class="field">
 			  <div class="control has-icons-left has-icons-right">
-			    <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+			    <input class="input is-large" type="text" placeholder="Enter Zip code here" value="">
 			    <span class="icon is-small is-left">
-			      <i class="fa fa-user"></i>
+			      <i class="fa fa-map-pin"></i>
 			    </span>
-			    <span class="icon is-small is-right">
+			    <span class="icon is-small is-right icon-check">
 			      <i class="fa fa-check"></i>
 			    </span>
+			    <span class="icon is-small is-right icon-remove">
+			      <i class="fa fa-remove"></i>
+			    </span>
 			  </div>
-			  <p class="help is-success">This username is available</p>
 			</div>
 		</form>
 	</section>
+
 </body>
 </html>
