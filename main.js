@@ -56,7 +56,7 @@ document.querySelector('body').addEventListener
 			.catch(err => console.log(err));
 			e.preventDefault();
 		};
-
+		//Show check or remove
 		function showIcon(icon){
 			// Clear icons
 			document.querySelector('.icon-remove').style.display = 'none';
@@ -70,5 +70,7 @@ document.querySelector('body').addEventListener
 			if(e.target.className == 'delete'){
 					document.querySelector('.message').remove();
 					document.querySelector('.zip').value = '';
+					document.querySelector('.icon-check').style.display = 'none';
+
 			}
 		}
