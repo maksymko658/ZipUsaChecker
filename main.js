@@ -2,7 +2,10 @@ document.querySelector('#zipForm').addEventListener
 		('submit', getLocationInfo);
 
 		function getLocationInfo(e){
-			console.log('123');
+			//Get zip value from input
+			const zip = document.querySelector('.zip').value;
+
+			console.log(zip);
 
 			e.preventDefault();
-		}
+		};
